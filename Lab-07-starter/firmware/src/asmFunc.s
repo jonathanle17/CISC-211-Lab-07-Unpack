@@ -59,7 +59,18 @@ asmFunc:
      * Use it to test the C test code */
     
     /*** STUDENTS: Place your code BELOW this line!!! **************/
-
+    mov r1,r0
+    ASR r1,r1,16
+    
+    mov r2,r0
+    ROR r2,r2,16
+    ASR r2,r2,16
+    
+    LDR r3,=a_value
+    STR r1,[r3]
+    
+    LDR r4,=b_value
+    STR r2,[r4]
     
     /*** STUDENTS: Place your code ABOVE this line!!! **************/
 
